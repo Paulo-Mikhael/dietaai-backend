@@ -16,7 +16,7 @@ const start = async () => {
   app.register(routes);
 
   try {
-    await app.listen({ port: 3333 });
+    await app.listen({ port: 3333, host: "0.0.0.0" });
     console.log("Servidor rodando em http://localhost:3333");
   } catch (error) {
     console.log(error);
